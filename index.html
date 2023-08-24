@@ -1,0 +1,109 @@
+<html
+    style="color-scheme: light; --liff-base-background-color: #FFFFFF; --liff-base-text-color: #000000; --liff-base-background-rgb-color: 255, 255, 255; --liff-base-text-rgb-color: 0, 0, 0; --liff-light-button-border-color: rgba(0, 0, 0, 0.15); --liff-title-text-color: #111111; --liff-title-background-color: #FFFFFF; --liff-title-button-color: #111111; --liff-icon-color: #111111; --liff-status-bar-color: black; --liff-title-subtext-color: #B7B7B7; --liff-progress-bar-color: #07B53B; --liff-progress-background-color: #EFEFEF; --liff-title-button-area-background-color: rgba(255, 255, 255, 0.12); --liff-title-button-area-border-color: rgba(0, 0, 0, 0.15);">
+
+<head>
+    <title>LINE オープンチャット</title>
+    <link rel="shortcut icon" href="https://square-api.line.me/smw/v2/static/sm/img/favicon_v2.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,target-densitydpi=medium-dpi,viewport-fit=cover">
+    <link rel="stylesheet" href="https://static.line-scdn.net/Openchat-Real/edge/css/square.3.0.1.1692866217709.css">
+    <style>
+        :root {
+            --sat: var(--android-safe-area-inset-top, env(safe-area-inset-top, constant(safe-area-inset-top)));
+            --sar: var(--android-safe-area-inset-right, env(safe-area-inset-right, constant(safe-area-inset-right)));
+            --sab: var(--android-safe-area-inset-bottom, env(safe-area-inset-bottom, constant(safe-area-inset-bottom)));
+            --sal: var(--android-safe-area-inset-left, env(safe-area-inset-left, constant(safe-area-inset-bottom)));
+        }
+
+        /*https://hololivepro.com/wp-content/themes/hololive_production/images/favicon.ico*/
+
+        .button_holo::before {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            background-image: url("https://hololivepro.com/wp-content/themes/hololive_production/images/favicon.ico");
+            background-size: 30px 30px;
+            background-repeat: no-repeat
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true" lang="jp">
+    <div id="root">
+        <div class="wrap aos cover_wrap">
+            <header class="header type_fullflex">
+                <div class="header_wrap">
+                    <div class="header_button_area left_group"><button type="button" class="button_main"><span
+                                class="blind">Main</span></button></div>
+                    <div class="header_title_area" style="display: flex; align-items: center; height: 100%;">
+                        <h1 class="title" style="width: 100%; opacity: 1; visibility: visible;">オープンチャット</h1>
+                        <h1 class="title"
+                            style="position: absolute; top: 50%; left: 50%; width: 100%; padding-left: 4px; padding-right: 0px; box-sizing: border-box; opacity: 0; visibility: hidden; transform: translate(-50%, -50%);">
+                            ホロライブ</h1>
+                    </div>
+                    <div class="header_button_area right_group">
+                        <button type="button" class="button_main"><span class="blind">Main</span></button>
+                        <button type="button" class="button_report"><span class="blind">Report</span></button>
+                    </div>
+                </div>
+            </header>
+            <div class="cover_container">
+                <div class="cover_content">
+                    <div
+                        style="position: absolute; top: 0px; left: 0px; height: 0px; width: 100%; background-color: rgb(255, 255, 255); z-index: -1;">
+                    </div>
+                    <div class="cover_content_wrap" style="overflow-y: auto;">
+                        <section class="cover_default_wrap">
+                            <div class="space" style="overflow: hidden;"><img
+                                    src="https://obs.line-scdn.net/0hnJ_53mdgMWViTCPkuU9OMlwabEsZPyh3HzQ8UBdLbgcdKX83Dix3BEBKbVEcfX8zVn4uCxNFPQYffnc"
+                                    style="object-fit: cover; height: 421px;"></div>
+                            <div class="cover_default">
+                                <h2 class="title"><span super></span><img
+                                        src="https://hololivepro.com/wp-content/themes/hololive_production/images/favicon.ico"
+                                        alt="holo"><span class="txt">ホロライブ</span></h2>
+                                <style>
+                                    [super] {
+                                        content: "";
+                                        display: inline-block;
+                                        width: 13px;
+                                        height: 17px;
+                                        background-image: url("https://static.line-scdn.net/Openchat-Real/edge/img/sp_common_372c1fac6d.svg");
+                                        background-size: 236px 228px;
+                                        background-position: -148px -150px;
+                                        background-repeat: no-repeat;
+                                        margin-top: 5px;
+                                        margin-right: 5px;
+                                        transform: scale(1.05);
+                                    }
+
+                                    [alt="holo"] {
+                                        width: 15px;
+                                        height: 15px;
+                                        margin: 0 5px;
+                                        transform: scale(1.5);
+                                    }
+                                </style>
+                                <p class="info">メンバー <span id="num">6200</span>&nbsp;ノート 421</p>
+                                <div class="desc_area">
+                                    <div class="scroll_area">#ホロライブ</div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="btn_area" onclick="location.href='line:\/\/square\/join?ticket=IUPNoTabjcA6QQ-9jq1LrsX22LTl5VKctQJhqw'"><button type="button" class="btn">新しいプロフィールで参加</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cache" style="position: absolute; width: 100%; height: 100%; z-index: 1; display: none;"></div>
+    <!-- by @amex2189 -->
+    <script>
+        const inc = () => {
+            document.getElementById("num").innerHTML = parseInt(document.getElementById("num").innerHTML) + 1;
+            setTimeout(inc, 10000 * Math.random());
+        }
+
+        inc();
+    </script>
