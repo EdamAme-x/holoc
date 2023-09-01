@@ -7,4 +7,6 @@ const app = new Hono()
 app.use('/*', serveStatic({ root: './' }))
 app.get('/', serveStatic({ path: './index.html' }))
 
-serve(app.fetch)
+serve(app.fetch, {
+    port: 8010
+})
